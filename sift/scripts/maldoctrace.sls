@@ -6,13 +6,13 @@
 # License: Apache License 2.0 (https://github.com/debugactiveprocess/MaldocTrace/blob/main/LICENSE)
 # Notes: maldoctrace
 
-{% set version = "0.4.0" -%}
+{% set version = "0.6.0" -%}
 {%- if grains["osarch"] == "aarch64" or grains["osarch"] == "arm64" -%}
 {%- set arch = "arm64" -%}
-{%- set hash = "3beeb0b85f8902d01985f05dc5333e4666c4d986a2912337e22bad59df5fa49a" -%}
+{%- set hash = "4925f17aeb2aeb6df40e0fa252904bcccf2d47088f69a75d6c661966d0e71b34" -%}
 {%- else -%}
 {%- set arch = "amd64" -%}
-{%- set hash = "26f5c1177c571c9056dc55bf01b30abeaf056b371c79d61f7b7e58328df1d1ba" -%}
+{%- set hash = "b760942d79911fe9697310e48916e6ccee965077e1aea913233dbbcec260a969" -%}
 {%- endif -%}
 {%- set folder = "maldocTrace_" ~ version ~ "_linux_" ~ arch -%}
 {%- set filename = folder ~ ".tar.gz" -%}
